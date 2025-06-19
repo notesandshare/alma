@@ -1,0 +1,21 @@
+baseURL = 'https://notesandshare.github.io/alma/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme="PaperMod"
+publishDir = "docs"
+
+
+[params]
+  author = "alma"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+
+[markup]
+  [markup.highlight]
+    noClasses = false

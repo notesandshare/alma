@@ -1,21 +1,40 @@
-baseURL = 'https://notesandshare.github.io/alma/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme="PaperMod"
-publishDir = "docs"
+baseURL = "https://notesandshare.github.io/alma/"
+languageCode = "en-us"
+title = "Notes and Share"
+theme = "PaperMod"
 
+# Optional: enable syntax highlighting and summary
+pagerSize = 10
+summaryLength = 70
 
 [params]
-  author = "alma"
+  author = "Your Name"
+  description = "My technical blog built with Hugo and PaperMod"
   ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  defaultTheme = "auto"
 
 [menu]
   [[menu.main]]
-    name = "home"
+    identifier = "home"
+    name = "Home"
     url = "/"
     weight = 1
 
-[markup]
-  [markup.highlight]
-    noClasses = false
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
