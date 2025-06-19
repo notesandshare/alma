@@ -1,8 +1,8 @@
-baseURL = 'https://notesandshare.github.io/'
+baseURL = 'https://notesandshare.github.io/alma/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme="PaperMod"
-
+publishDir = "docs"
 
 
 [params]
