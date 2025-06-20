@@ -2,6 +2,9 @@ baseURL = "https://notesandshare.github.io/alma/"
 languageCode = "en-us"
 title = "Notes and Share"
 theme = "PaperMod"
+relativeURLs = true
+canonifyURLs = true
+publishDir = "docs"
 
 # Optional: enable syntax highlighting and summary
 pagerSize = 10
@@ -38,3 +41,10 @@ summaryLength = 70
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+
+[security]
+  [security.http]
+    [security.http.headers]
+      [security.http.headers.styleSrc]
+        integrity = false  # disabled CSS SRI check
