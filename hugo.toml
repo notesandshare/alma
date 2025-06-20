@@ -1,4 +1,4 @@
-baseURL = "https://notesandshare.github.io/alma/"
+baseURL = "https://notesandshare.github.io/"
 languageCode = "en-us"
 title = "Notes and Share"
 theme = "PaperMod"
