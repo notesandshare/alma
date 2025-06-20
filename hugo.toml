@@ -1,4 +1,4 @@
-baseURL = "https://notesandshare.github.io/"
+baseURL = "https://notesandshare.github.io/alma/"
 languageCode = "en-us"
 title = "Notes and Share"
 theme = "PaperMod"
@@ -43,7 +43,12 @@ summaryLength = 70
   home = ["HTML", "RSS", "JSON"]
 
 
-[security]
+[build]
+  noIntegrity = true  # noIntegrity check SRI
+
+[params.assets]
+disableFingerprinting = true
+
   [security.http]
     [security.http.headers]
       [security.http.headers.styleSrc]
