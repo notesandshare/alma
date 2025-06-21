@@ -2,11 +2,13 @@ baseURL = "https://notesandshare.github.io/alma/"
 languageCode = "en-us"
 title = "Notes and Share"
 theme = "PaperMod"
+relativeURLs = true
+canonifyURLs = true
 publishDir = "docs"
 
-# VERY IMPORTANT: make sure both of these are OFF
-relativeURLs = false
-canonifyURLs = false
+# Optional: enable syntax highlighting and summary
+pagerSize = 10
+summaryLength = 70
 
 [params]
   author = "Your Name"
@@ -40,13 +42,14 @@ canonifyURLs = false
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+
 [build]
-  noIntegrity = true
+  noIntegrity = true  # noIntegrity check SRI
 
 [params.assets]
-  disableFingerprinting = true
+disableFingerprinting = true
 
-[security.http]
-  [security.http.headers]
-    [security.http.headers.styleSrc]
-      integrity = false
+  [security.http]
+    [security.http.headers]
+      [security.http.headers.styleSrc]
+        integrity = false  # disabled CSS SRI check
