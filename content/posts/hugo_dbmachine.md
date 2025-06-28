@@ -1,6 +1,6 @@
 +++
 date = '2025-06-28T13:32:23+08:00'
-draft = true
+draft = false
 title = '“On the WordPress installation screen, what should be entered for the database host?'
 author = "alma"
 +++
